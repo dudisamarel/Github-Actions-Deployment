@@ -1,0 +1,27 @@
+name: Push Branch
+description: Pushing branch to trigger web service codepipeline
+inputs:
+  branch-name:
+    required: true
+    description: "The branch thats connected to the codepipeline"
+  commit-message:
+    required: false
+    description: "The commit message"
+    default: "$GITHUB_REF_NAME"
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v3
+    - name: Create upload_date file
+      run: date +%s > upload_date.txt
+      shell: bash
+    - name: Push to selected branch
+      run: |
+        git config --global user.name github-actions[bot]
+        git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        git checkout -b "${{ inputs.branch-name }}"
+        git add .
+        git commit -m "${{ inputs.commit-message }}"
+        git push -f origin ${{ inputs.branch-name }}
+      shell: bash
