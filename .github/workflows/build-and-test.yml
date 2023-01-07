@@ -1,0 +1,14 @@
+name: Build & Test
+on:
+  workflow_call:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
