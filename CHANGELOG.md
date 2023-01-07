@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.1.1...v1.1.2) (2023-01-07)
+
+
+### Bug Fixes
+
+* workflows connections ([#22](https://github.com/dudisamarel/Github-Actions-Deployment/issues/22)) ([852c461](https://github.com/dudisamarel/Github-Actions-Deployment/commit/852c4619fe30b66c2554d4d1bcaa899729042bec))
+
 ## [1.1.1](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.1.0...v1.1.1) (2023-01-07)
 
 
