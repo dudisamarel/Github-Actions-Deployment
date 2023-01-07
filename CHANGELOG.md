@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.1.2...v1.2.0) (2023-01-07)
+
+
+### Features
+
+* test ([#27](https://github.com/dudisamarel/Github-Actions-Deployment/issues/27)) ([828c580](https://github.com/dudisamarel/Github-Actions-Deployment/commit/828c580118f3e40e96129caa568f3d52e1501ad8))
+
 ## [1.1.2](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.1.1...v1.1.2) (2023-01-07)
 
 
