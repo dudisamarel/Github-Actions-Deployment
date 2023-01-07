@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.2.0...v1.3.0) (2023-01-07)
+
+
+### Features
+
+* **actions:** split workflows into actions ([#29](https://github.com/dudisamarel/Github-Actions-Deployment/issues/29)) ([d8a763a](https://github.com/dudisamarel/Github-Actions-Deployment/commit/d8a763a5cf1f4e8eae67197371f86fdf35572f13))
+
 ## [1.2.0](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.1.2...v1.2.0) (2023-01-07)
 
 
