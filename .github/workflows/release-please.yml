@@ -14,9 +14,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: tag major and minor versions
         if: ${{ steps.release.outputs.release_created }}
-<<<<<<< HEAD
         uses: ./.github/workflows/develop-deployment.yml
- 
-=======
-      - uses: ./.github/workflows/develop-deployment.yml
->>>>>>> 8c11d004ecfa5a68c86f0637572e1ce7b9b608a5
+
