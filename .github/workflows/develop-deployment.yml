@@ -7,6 +7,7 @@ jobs:
   develop:
     name: Develop Deployment
     runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v2
       - name: Create upload_date file
         run: date +%s > upload_date.txt
