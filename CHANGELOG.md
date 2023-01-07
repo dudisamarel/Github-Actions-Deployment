@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.1.0...v1.1.1) (2023-01-07)
+
+
+### Bug Fixes
+
+* develop trigger ([#20](https://github.com/dudisamarel/Github-Actions-Deployment/issues/20)) ([98b45bf](https://github.com/dudisamarel/Github-Actions-Deployment/commit/98b45bfe042d16b7f11feff81786de6ca4cd0784))
+
 ## [1.1.0](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.0.0...v1.1.0) (2023-01-07)
 
 
