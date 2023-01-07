@@ -11,8 +11,6 @@ jobs:
         id: release
         with:
           release-type: node
-          package-name: ${{env.ACTION_NAME}}
-          command: release-pr
       - uses: actions/checkout@v2
       - name: tag major and minor versions
         if: ${{ steps.release.outputs.release_created }}
