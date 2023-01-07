@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.1.0](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.0.0...v1.1.0) (2023-01-07)
+
+
+### Features
+
+* changed readme test ([#17](https://github.com/dudisamarel/Github-Actions-Deployment/issues/17)) ([2f5c366](https://github.com/dudisamarel/Github-Actions-Deployment/commit/2f5c36658c978d5d20fec10f7b49f53f94d33d81))
+* **CI:** Build & Test workflow ([#11](https://github.com/dudisamarel/Github-Actions-Deployment/issues/11)) ([ab5fb92](https://github.com/dudisamarel/Github-Actions-Deployment/commit/ab5fb9200e7a9c64661991455f49c41157d6fce3))
+* gitignore ([#16](https://github.com/dudisamarel/Github-Actions-Deployment/issues/16)) ([6a65516](https://github.com/dudisamarel/Github-Actions-Deployment/commit/6a6551672468519cd7ffd621eac54a0db3d7339c))
+* something test ([#14](https://github.com/dudisamarel/Github-Actions-Deployment/issues/14)) ([7eca972](https://github.com/dudisamarel/Github-Actions-Deployment/commit/7eca972355b91518800405593a9f01b4ee6e63c0))
+
+
+### Bug Fixes
+
+* develop steps ([#10](https://github.com/dudisamarel/Github-Actions-Deployment/issues/10)) ([044707e](https://github.com/dudisamarel/Github-Actions-Deployment/commit/044707e04fa7fc72fae0ce45611bdd1ddde73d16))
+* release please yml ([#18](https://github.com/dudisamarel/Github-Actions-Deployment/issues/18)) ([d3a3373](https://github.com/dudisamarel/Github-Actions-Deployment/commit/d3a337313385521f0f7af1217336e0c5a5b73e79))
+* **test:** test ([#15](https://github.com/dudisamarel/Github-Actions-Deployment/issues/15)) ([c042465](https://github.com/dudisamarel/Github-Actions-Deployment/commit/c04246571de0aaad02900bce2d9f5716cdef15a7))
+* **test:** test fix ([#12](https://github.com/dudisamarel/Github-Actions-Deployment/issues/12)) ([fb6d108](https://github.com/dudisamarel/Github-Actions-Deployment/commit/fb6d108ab8959fdc4a0d835ffc3b31190103193f))
+
 ## 1.0.0 (2023-01-07)
 
 
