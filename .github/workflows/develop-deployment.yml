@@ -4,3 +4,7 @@ on:
     tags:
       - "**"
 jobs:
+  develop:
+    needs: ci-develop
+    name: Develop Deployment
+    runs-on: ubuntu-latest
