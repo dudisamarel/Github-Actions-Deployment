@@ -3,10 +3,14 @@ on:
   workflow_call:
   push:
     tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - "v[0-9]+.[0-9]+.[0-9]+"
 jobs:
   build-and-test:
-    uses: ./.github/workflows/build-and-test.yml
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: build-test
+        uses: ./.github/actions/build-and-test
 
   develop:
     needs: build-and-test
@@ -14,15 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Create upload_date file
-        run: date +%s > upload_date.txt
-      - name: Push to development branch
-        run: |
-          git config --global user.name github-actions[bot]
-          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git checkout -b "development"
-          git add .
-          git commit -m "$GITHUB_REF_NAME"
-          git push -f origin development
-          echo ${{ github.event.inputs.environment }}
+      - id: build-test
+        uses: ./.github/actions/push-branch
+        with:
+          branch-name: development
+
