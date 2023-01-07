@@ -2,7 +2,7 @@ name: Develop Deployment
 on:
   push:
     tags:
-      - "**"
+      - 'v[0-9]+.[0-9]+.[0-9]+'
 jobs:
   develop:
     name: Develop Deployment
