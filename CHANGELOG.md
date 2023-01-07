@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.3.0...v1.3.1) (2023-01-07)
+
+
+### Bug Fixes
+
+* github token ([#31](https://github.com/dudisamarel/Github-Actions-Deployment/issues/31)) ([6db26c6](https://github.com/dudisamarel/Github-Actions-Deployment/commit/6db26c6e85ec963fd29dbc5eca38d6a64d57eed9))
+
 ## [1.3.0](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.2.0...v1.3.0) (2023-01-07)
 
 
