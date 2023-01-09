@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.3](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.3.2...v1.3.3) (2023-01-09)
+
+
+### Bug Fixes
+
+* **reset action:** removed the update file and change rebase to reset ([#38](https://github.com/dudisamarel/Github-Actions-Deployment/issues/38)) ([27392e5](https://github.com/dudisamarel/Github-Actions-Deployment/commit/27392e556cf7286f31bcf61a183327ad5907f517))
+
 ## [1.3.2](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.3.1...v1.3.2) (2023-01-09)
 
 
