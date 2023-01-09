@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - id: build-test
-        uses: ./.github/actions/push-branch
+      - id: reset-branch-head
+        uses: ./.github/actions/reset-branch-head
         with:
           branch-name: development
           github-secret: ${{ secrets.GITHUB_TOKEN }}
