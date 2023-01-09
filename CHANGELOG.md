@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.5](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.3.4...v1.3.5) (2023-01-09)
+
+
+### Bug Fixes
+
+* test ([fcf6fc6](https://github.com/dudisamarel/Github-Actions-Deployment/commit/fcf6fc6f628652db66d9febf5f03547d2239775b))
+
 ## [1.3.4](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.3.3...v1.3.4) (2023-01-09)
 
 
