@@ -1,16 +1,16 @@
-name: Rebase branch to certain tag
-description: Rebasing branch to certain version tag
+name: Reset branch head to certain tag / commit
+description: Resetting branch to certain version tag
 inputs:
   branch-name:
     required: true
     description: "The name of the branch"
-  commit-message:
-    required: false
-    description: "The commit message"
-    default: "$GITHUB_REF_NAME"
   github-secret:
     required: true
     description: "github token"
+  target-commit:
+    required: true
+    description: "rebase target - the working branch / release commit"
+    default: "$GITHUB_REF_NAME"
 runs:
   using: "composite"
   steps:
@@ -24,7 +24,6 @@ runs:
         git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
         git remote set-url origin https://x-access-token:${{ inputs.github-secret }}@github.com/$GITHUB_REPOSITORY
         git checkout -b "${{ inputs.branch-name }}"
-        git add .
-        git commit -m "${{ inputs.commit-message }}"
+        git rebase --hard ${{ inputs.target-commit }}
         git push -f origin ${{ inputs.branch-name }}
       shell: bash
