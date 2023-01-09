@@ -21,4 +21,3 @@ jobs:
         with:
           branch-name: development
           github-secret: ${{ secrets.GITHUB_TOKEN }}
-          target-commit: ${{ steps.release.outputs.tag_name }}
