@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.4](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.3.3...v1.3.4) (2023-01-09)
+
+
+### Bug Fixes
+
+* release - please target input ([e2249ba](https://github.com/dudisamarel/Github-Actions-Deployment/commit/e2249ba7807cda5f6ca945b96ebf22424159a998))
+
 ## [1.3.3](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.3.2...v1.3.3) (2023-01-09)
 
 
