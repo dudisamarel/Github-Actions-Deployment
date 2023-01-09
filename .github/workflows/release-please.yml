@@ -11,14 +11,14 @@ jobs:
         id: release
         with:
           release-type: node
-      # - uses: actions/checkout@v2
-      # - name: Build & Test
-      #   if: ${{ steps.release.outputs.release_created }}
-      #   uses: ./.github/actions/build-and-test
-      # - name: Deploy Development
-      #   if: ${{ steps.release.outputs.release_created }}
-      #   uses: ./.github/actions/reset-branch-head
-      #   with:
-      #     branch-name: development
-      #     github-secret: ${{ secrets.GITHUB_TOKEN }}
-      #     target-commit: ${{ steps.release.outputs.tag_name }}
+      - uses: actions/checkout@v2
+      - name: Build & Test
+        if: ${{ steps.release.outputs.release_created }}
+        uses: ./.github/actions/build-and-test
+      - name: Deploy Development
+        if: ${{ steps.release.outputs.release_created }}
+        uses: ./.github/actions/reset-branch-head
+        with:
+          branch-name: development
+          github-secret: ${{ secrets.GITHUB_TOKEN }}
+          target-commit: ${{ steps.release.outputs.tag_name }}
