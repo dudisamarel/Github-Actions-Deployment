@@ -1,16 +1,16 @@
-name: Push Branch
-description: Pushing branch to trigger web service codepipeline
+name: Rebase branch to certain tag
+description: Rebasing branch to certain version tag
 inputs:
   branch-name:
     required: true
-    description: "The branch thats connected to the codepipeline"
+    description: "The name of the branch"
   commit-message:
     required: false
     description: "The commit message"
     default: "$GITHUB_REF_NAME"
   github-secret:
-    required: false
-    description: "github token used to push origin"
+    required: true
+    description: "github token"
 runs:
   using: "composite"
   steps:
