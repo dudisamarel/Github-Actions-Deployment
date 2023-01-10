@@ -1,0 +1,57 @@
+name: Deployment
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: choice
+        description: select environment
+        options:
+          - Staging
+          - Production
+jobs:
+  build-and-test:
+    name: Build And Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: build-test
+        uses: ./.github/actions/build-and-test
+
+  develop:
+    needs: build-and-test
+    name: Develop Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: reset-branch-head
+        uses: ./.github/actions/reset-branch-head
+        with:
+          branch-name: development
+          github-secret: ${{ secrets.GITHUB_TOKEN }}
+
+  staging:
+    name: Staging Deployment
+    environment:
+      name: Staging
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: reset-branch-head
+        uses: ./.github/actions/reset-branch-head
+        with:
+          branch-name: staging
+          github-secret: ${{ secrets.GITHUB_TOKEN }}
+
+  production:
+    if: ${{ github.event.inputs.environment }} == Production
+    name: Production Deployment
+    environment:
+      name: Production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: reset-branch-head
+        uses: ./.github/actions/reset-branch-head
+        with:
+          branch-name: production
+          github-secret: ${{ secrets.GITHUB_TOKEN }}
