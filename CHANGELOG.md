@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.3.5...v1.4.0) (2023-01-10)
+
+
+### Features
+
+* **deployment:** added another env to deploy ([#43](https://github.com/dudisamarel/Github-Actions-Deployment/issues/43)) ([7f71ee0](https://github.com/dudisamarel/Github-Actions-Deployment/commit/7f71ee0a55633d73eac7dc9f0645ed3ab72fbe9d))
+
 ## [1.3.5](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.3.4...v1.3.5) (2023-01-09)
 
 
