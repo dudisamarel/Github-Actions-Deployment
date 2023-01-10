@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.4.0...v1.4.1) (2023-01-10)
+
+
+### Bug Fixes
+
+* added test deps ([#45](https://github.com/dudisamarel/Github-Actions-Deployment/issues/45)) ([8609c72](https://github.com/dudisamarel/Github-Actions-Deployment/commit/8609c7227d06c292ae90dadb0284288d1026549d))
+
 ## [1.4.0](https://github.com/dudisamarel/Github-Actions-Deployment/compare/v1.3.5...v1.4.0) (2023-01-10)
 
 
