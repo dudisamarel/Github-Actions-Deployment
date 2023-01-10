@@ -30,6 +30,7 @@ jobs:
           github-secret: ${{ secrets.GITHUB_TOKEN }}
 
   staging:
+    needs: build-and-test
     name: Staging Deployment
     environment:
       name: Staging
@@ -43,6 +44,7 @@ jobs:
           github-secret: ${{ secrets.GITHUB_TOKEN }}
 
   production:
+    needs: build-and-test
     if: ${{ github.event.inputs.environment }} == Production
     name: Production Deployment
     environment:
