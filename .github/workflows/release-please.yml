@@ -17,7 +17,7 @@ jobs:
         uses: ./.github/actions/build-and-test
       - name: Deploy Development
         if: ${{ steps.release.outputs.release_created }}
-        uses: ./.github/actions/push-branch
+        uses: ./.github/actions/reset-branch-head
         with:
           branch-name: development
           github-secret: ${{ secrets.GITHUB_TOKEN }}
