@@ -46,7 +46,6 @@ jobs:
   production:
     needs: build-and-test
     if: ${{ github.event.inputs.environment }} == Production
-    needs: build-and-test
     name: Production Deployment
     environment:
       name: Production
